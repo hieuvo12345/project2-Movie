@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-Infinity" prefHeight="238.5" prefWidth="477.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.mymovie.Homepage1Controller">
+   <children>
+      <ImageView fx:id="img1" fitHeight="238.5" fitWidth="477.0" layoutX="0.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../img1/avata.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="202.0" layoutY="292.0" text="Welcome to the world of movies">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fx:id="img2" fitHeight="238.5" fitWidth="477.0" layoutX="-477.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img1/avengers.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="238.5" fitWidth="477.0" layoutX="-477.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img1/iteawon_class.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="238.5" fitWidth="477.0" layoutX="-477.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img1/bo_gia.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="238.5" fitWidth="477.0" layoutX="-477.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img1/fast.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img6" fitHeight="238.5" fitWidth="477.0" layoutX="-477.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img1/XSCNgto.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

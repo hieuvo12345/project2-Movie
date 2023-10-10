@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#choose_seat" prefHeight="65.0" prefWidth="87.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.mymovie.SeatController">
+   <children>
+      <Label fx:id="seat_name" alignment="CENTER" layoutX="10.0" layoutY="9.0" prefHeight="46.0" prefWidth="66.0" style="-fx-border-color: black;" text="H17">
+         <font>
+            <Font name="Times New Roman" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

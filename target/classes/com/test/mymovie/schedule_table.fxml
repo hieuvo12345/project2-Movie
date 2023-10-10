@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.mymovie.Schedule_tableController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tbl_schedule" onMouseClicked="#display_selected_item" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="no" prefWidth="75.0" text="No" />
+                <TableColumn fx:id="schedule_date" prefWidth="185.5999755859375" text="Schedule Date" />
+                  <TableColumn fx:id="movie" prefWidth="196.800048828125" text="Movie Name" />
+                  <TableColumn fx:id="room" minWidth="0.0" prefWidth="142.39996337890625" text="Room" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

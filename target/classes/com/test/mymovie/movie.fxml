@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="621.0" prefWidth="812.0" style="-fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.mymovie.MovieController">
+   <left>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="AnchorPane" layoutY="16.0" prefHeight="574.0" prefWidth="358.0">
+               <children>
+                  <Button fx:id="btn_import" layoutX="168.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#import_img" style="-fx-background-color: #3149a1;" text="Import" textFill="WHITE" />
+                  <Label layoutX="24.0" layoutY="238.0" text="Movie Title: " />
+                  <Label layoutX="32.0" layoutY="276.0" text="Director: " />
+                  <Label layoutX="32.0" layoutY="315.0" text="Release: " />
+                  <Label layoutX="36.0" layoutY="358.0" text="Genres:" />
+                  <Label layoutX="43.0" layoutY="398.0" text="Cast:" />
+                  <TextField fx:id="txttitle" layoutX="102.0" layoutY="234.0" prefHeight="26.0" prefWidth="214.0" />
+                  <TextField fx:id="txtdirector" layoutX="102.0" layoutY="272.0" prefHeight="26.0" prefWidth="214.0" />
+                  <TextField fx:id="txtgenres" layoutX="102.0" layoutY="354.0" prefHeight="26.0" prefWidth="214.0" />
+                  <TextField fx:id="txtcast" layoutX="102.0" layoutY="394.0" prefHeight="26.0" prefWidth="214.0" />
+                  <DatePicker fx:id="txtrelease" layoutX="103.0" layoutY="311.0" prefHeight="26.0" prefWidth="214.0" />
+                  <Button fx:id="btn_insert" layoutX="39.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #3149a1;" text="Insert" textFill="WHITE" />
+                  <Button fx:id="btn_update" layoutX="119.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#update" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #337254;" text="Update" textFill="WHITE" />
+                  <Button fx:id="btn_delete" layoutX="200.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #d33d63;" text="Delete" textFill="WHITE" />
+                  <Button fx:id="btn_clear" layoutX="284.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #c242be;" text="Clear" textFill="WHITE" />
+                  <Separator layoutX="351.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fx:id="txtimg" fitHeight="175.0" fitWidth="126.0" layoutX="128.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="42.0" layoutY="441.0" text="Price:" />
+                  <TextField fx:id="txtprice" layoutX="102.0" layoutY="436.0" prefHeight="26.0" prefWidth="214.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="txtmovie" layoutY="17.0" onMouseClicked="#table_movie" prefHeight="605.0" prefWidth="455.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="17.0">
+              <columns>
+                <TableColumn fx:id="table_no" prefWidth="60.0" text="No" />
+                <TableColumn fx:id="table_title" minWidth="0.0" prefWidth="200.0" text="Movie Title" />
+                  <TableColumn fx:id="table_director" prefWidth="150.0" text="Director" />
+                  <TableColumn fx:id="table_release" prefWidth="150.0" text="Release" />
+                  <TableColumn fx:id="table_genres" prefWidth="150.0" text="Genres" />
+                  <TableColumn fx:id="table_cast" prefWidth="300.0" text="Cast" />
+                  <TableColumn fx:id="tbl_price" prefWidth="100.0" text="Price" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
